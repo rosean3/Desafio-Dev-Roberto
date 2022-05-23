@@ -1,0 +1,19 @@
+.turnRight {
+    transform: scaleX(-1) rotate(71deg) !important;
+    margin: -3% -0% 0% 2%;
+}
+
+.turnUp {
+    transform: scaleX(-1) rotate(180deg) !important;
+    margin: 12% -0% 0% -13%;
+}
+
+.turnLeft {
+    transform: scaleX(1) rotate(43deg) !important;
+    margin: -8% -0% 0% 5%;
+}
+
+.turnDown {
+    transform: scaleX(-1) rotate(0deg) !important;
+    margin: -20% -0% 0% -10%;
+}
