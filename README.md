@@ -22,9 +22,3 @@ Esse é o arquivo que você deve trabalhar. Comente o que cada linha de código 
 
 - Comentários no arquivo main.js
 - Colisões.
-
-
-
-
-
-# Desafio-Dev-Roberto
