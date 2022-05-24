@@ -10,7 +10,7 @@ const SCREEN_WIDTH = screen.width;
 const SCREEN_HEIGHT = screen.height;
 
 
-// definindo as posições x e y inicias da personagem
+// definindo as posições x e y iniciais da personagem
 let xPosition = 500;
 let yPosition = 300;
 
@@ -18,8 +18,8 @@ let yPosition = 300;
 const keysAvaiable = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"]
 const directions = ["turnUp", "turnLeft", "turnRight", "turnDown"];
 
-/* rodando um event listener na tela inteira, que "escutará" qualquer tipo de evento (mas nós vamos filtrar os
-de tecla clicada)*/
+/* rodando um event listener na tela inteira, que "escutará" eventos do tipo keydown
+(de teclas clicadas)*/
 window.addEventListener("keydown", (event) => {
     // recebendo a tecla que foi apertada
     const key  = event.key;
@@ -58,7 +58,7 @@ window.addEventListener("keydown", (event) => {
     eixo y (já que a origem das coordenadas da tela está na extremidade superior esquerda) */
     if(key === "ArrowUp" && (yPosition-VELOCITY>0)){
         /* andar para cima significa mudar a estilização da personagem para "turnUp" (o que é feito ao se adicionar
-            a classe "turnUp" já estilizada no CSS ao html da personagem) e subtrair da sua posição no eixo y*/
+        a classe "turnUp" já estilizada no CSS ao html da personagem) e subtrair da sua posição no eixo y*/
         character.classList.add("turnUp");
         yPosition -= VELOCITY;
     }
@@ -70,7 +70,7 @@ window.addEventListener("keydown", (event) => {
     eixo y (já que a origem das coordenadas da tela está na extremidade superior esquerda) */
     if(key === "ArrowDown" && (yPosition + VELOCITY +100)< screen_height){
         /* andar para baixo significa mudar a estilização da personagem para "turnDown" (o que é feito ao se adicionar
-            a classe "turnDown" já estilizada no CSS ao html da personagem) e adicionar à sua posição no eixo y*/
+        a classe "turnDown" já estilizada no CSS ao html da personagem) e adicionar à sua posição no eixo y*/
         character.classList.add("turnDown");
         yPosition += VELOCITY;
     }
